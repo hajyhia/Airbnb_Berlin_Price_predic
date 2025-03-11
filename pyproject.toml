@@ -16,6 +16,7 @@ jupyter = "^1.1.1"
 missingno = "^0.5.2"
 geopy = "^2.4.1"
 google = "^3.0.0"
+drive = "^0.4.4"
 
 
 [build-system]
