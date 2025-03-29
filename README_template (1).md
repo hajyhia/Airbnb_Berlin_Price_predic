@@ -34,6 +34,7 @@ This project aims to to predict the price of accommodations based on a summary o
 It uses Python and various machine learning libraries to _(summary of methodology or techniques used)_.
 
 **Problem Type:** Regression 
+
 **Main Objective:** Predict Airbnb rental prices based on property Accomodates, location, Room Type and Property Type and more features.
 
 ---
@@ -43,7 +44,7 @@ It uses Python and various machine learning libraries to _(summary of methodolog
 ```
 project-name/
 │
-├── data/               # Raw and processed datasets
+├── content/            # Raw and processed datasets
 ├── notebooks/          # Jupyter notebooks for EDA and model development
 ├── models/             # Trained models and serialized files
 ├── src/                # Core scripts: preprocessing, training, evaluation
@@ -52,18 +53,26 @@ project-name/
 │   └── evaluate.py
 ├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
-└── pyproject.toml      # Dependencies
-|__ poetry.lock         # 
+└── pyproject.toml      # Project dependencies and settings
+|__ poetry.lock         
 ```
 
 ---
+## 🚀 Getting Started
 
+Instructions to get a copy of the project running locally.
+
+### Prerequisites
+
+- Download [Airbnb Berlin.csv](https://www.kaggle.com/datasets/thedevastator/berlin-airbnb-ratings-how-hosts-measure-up/data)
+- Intsall python
+  
 ## ⚙️ Installation
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
+git clone https://github.com/hajyhia/Airbnb_Berlin_Price_predic.git
+cd Airbnb_Berlin_Price_predic
 ```
 
 Create a virtual environment and install dependencies:
@@ -98,7 +107,7 @@ python src/evaluate.py
 
 - **Algorithm(s):** Linear Regression, Random Forest, XGBoost, etc.
 - **Evaluation Metrics:** RMSE, MAE, R² Score
-- **Features Used:** _(list a few key features)_
+- **Features Used:** "Guests Included","Room Type","Bedrooms","Accomodates","Cleanliness Rating","Location Rating","Value Rating","Property Type Reduced","Distance From Center","Reviews","Beds","Host Since From Now"
 
 ---
 
