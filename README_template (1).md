@@ -105,17 +105,44 @@ python src/evaluate.py
 
 ## 🧪 Model Details
 
-- **Algorithm(s):** Linear Regression, Random Forest, XGBoost, etc.
+- **Algorithm(s):** Linear Regression, Decision Tree Regressor, Random Forest, Gradient Boosting Machine (GBM),Adaptive Boosting (ADABoost), and XGBoost.
 - **Evaluation Metrics:** RMSE, MAE, R² Score
 - **Features Used:** "Guests Included","Room Type","Bedrooms","Accomodates","Cleanliness Rating","Location Rating","Value Rating","Property Type Reduced","Distance From Center","Reviews","Beds","Host Since From Now"
+
+### Performance Metrics with the fine tuned Model
+
+| model           | MAE       | MSE         |  RMSE     | RMSLE    | R²       |
+|-----------------|-----------|-------------|-----------|----------|----------|
+| XGBoost         | 18.943212 | 1072.720485 | 32.752412 | 0.391233 | 0.523833 |
+| GBM	            | 19.182484	| 1071.343460	| 32.731383	| 0.393951 | 0.524444 |
+| RandomForest    |	19.487438 |	1103.768108 |	33.223006	| 0.402343 | 0.510051 |
+| LinearRegression|	21.611289 |	1316.465641	| 36.283132 |	0.463381 | 0.415637 |
+| DecisionTree    |	26.788363	| 2431.391091	| 49.309138 |	0.539322 |-0.079264 |
+| SVR	            | 27.265245	| 2263.359686 |	47.574780 |	0.554178 |-0.004677 |
+| ADABoost        |	28.698045	| 1793.594578	| 42.350851 |	0.552306 | 0.203846 |
+
 
 ---
 
 ## 📊 Results
 
+The best Model we got with improvment of 5.52%, after tuning using **RandomizedSearchCV(estimator=model_RFR, param_distributions=lighter_grid, n_iter=25, cv=3,
+                               verbose=2, random_state=42, n_jobs=-1)** was **RandomForestRegressor** with the following features
+- bootstrap=False
+- max_depth=30
+- max_features='sqrt'
+- min_samples_split=5
+- n_estimators=300
+- random_state=42
+
+| model           | MAE       | MSE         |  RMSE     | RMSLE    | R²       |
+|-----------------|-----------|-------------|-----------|----------|----------|
+| XGBoost         | 18.464568 | 1018.055651 | 31.906984 | 0.383515 | 0.548098 |
+                      
 Summary of model performance:  
-- Validation RMSE: xxx  
-- Test R² Score: xxx
+- Validation MAE: 15.45
+- Validation RMSE: 31.9  
+- Test R² Score: 0.548
 
 Optional: Add graphs, confusion matrix, or screenshots here.
 
@@ -129,4 +156,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed ...
