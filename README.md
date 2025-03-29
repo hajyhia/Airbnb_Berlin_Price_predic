@@ -53,17 +53,17 @@ Instructions to get a copy of the project running locally.
 
 ### Prerequisites
 
-- Tool / package 1
-- Tool / package 2
+- Download [Airbnb Berlin.csv](https://www.kaggle.com/datasets/thedevastator/berlin-airbnb-ratings-how-hosts-measure-up/data)
+- Intsall python
 
 ### Installation
 
 \`\`\`bash
 # Clone the repository
-git clone https://github.com/yourusername/project-name.git
+git clone https://github.com/hajyhia/Airbnb_Berlin_Price_predic.git
 
 # Navigate to the project directory
-cd project-name
+cd Airbnb_Berlin_Price_predic
 
 # Install dependencies
 npm install
