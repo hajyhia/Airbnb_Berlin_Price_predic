@@ -46,7 +46,7 @@ The project is written in Python and contain the following notebooks and stages:
     - Reduce Large Categories
     - Transform/Manipulate data ('instant_bookable' data into bool)
   - Export dataset for next stage
-- **02_Airbnb_Berlin_EDA1,2 (Explanatory Data Analysis)**
+- **02_Airbnb_Berlin_EDA (Explanatory Data Analysis)**
   - Location vs Price
   - room and property type vs Price
   - Price Differences on a minimum_nights, number_of_reviews, reviews_per_month, and availability_365
