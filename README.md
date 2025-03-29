@@ -115,7 +115,7 @@ python src/evaluate.py
 
 The best Model we got before any tuning was XGBoost with MAE=18.94 and R²=0.52
 
-| Model            |   MAE     |     MSE      |   RMSE    |  RMSLE    |    R²     |
+| Model            |    MAE    |     MSE      |   RMSE    |   RMSLE   |    R²     |
 |:-----------------|:---------:|:------------:|:---------:|:---------:|:---------:|
 | XGBoost          | 18.943212 | 1072.720485  | 32.752412 | 0.391233  | 0.523833  |
 | GBM              | 19.182484 | 1071.343460  | 32.731383 | 0.393951  | 0.524444  |
@@ -125,7 +125,7 @@ The best Model we got before any tuning was XGBoost with MAE=18.94 and R²=0.52
 | SVR              | 27.265245 | 2263.359686  | 47.574780 | 0.554178  | -0.004677 |
 | ADABoost         | 28.698045 | 1793.594578  | 42.350851 | 0.552306  | 0.203846  |
 ---
-### Hyperparameters and Finetuning
+### 🛠️ Hyperparameters and Fine-tuning
 
 The best Model we got with improvment of 5.52%, after tuning using **RandomizedSearchCV(estimator=model_RFR, param_distributions=lighter_grid, n_iter=25, cv=3,
                                verbose=2, random_state=42, n_jobs=-1)** was **RandomForestRegressor(bootstrap=False, max_depth=30, max_features='sqrt',
