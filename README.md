@@ -22,7 +22,6 @@ The objective of this project is to predict the price of accommodations based on
 - [Model Details](#model-details)
 - [Results](#results)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -192,7 +191,3 @@ Optional: Add graphs, confusion matrix, or screenshots here.
 Contributions are welcome! Please open an issue or submit a pull request.
 
 ---
-
-## 📄 License
-
-This project is licensed ...
