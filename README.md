@@ -37,7 +37,7 @@ It uses Python and various machine learning libraries to _(summary of methodolog
 **Main Objective:** Predict Airbnb rental prices based on property Accommodates, location, Room Type and Property Type and more features.
 
 The project is written in Python and contain the following notebooks and stages:
-- 01_Airbnb_Berlin_Data_Preparation
+- **01_Airbnb_Berlin_Data_Preparation**
   - Import dataset
   - Aggregate dataset by Listing ID
   - Inspection: descriptive, statistics info and missing values
@@ -46,22 +46,22 @@ The project is written in Python and contain the following notebooks and stages:
     - Reduce Large Categories
     - Transform/Manipulate data ('instant_bookable' data into bool)
   - Export dataset for next stage
-- 02_Airbnb_Berlin_EDA1,2 (Explanatory Data Analysis)
+- **02_Airbnb_Berlin_EDA1,2 (Explanatory Data Analysis)**
   - Location vs Price
   - room and property type vs Price
   - Price Differences on a minimum_nights, number_of_reviews, reviews_per_month, and availability_365
   - Correlations between reviews
   - Detect and handle outliers using inter-quartile range (IQR)
   - Detect and handle missing values using KNN model
-- 03_Airbnb_Berlin_Feature_Engineering
+- **03_Airbnb_Berlin_Feature_Engineering**
   - Transfer 'latitude' and 'longitude' to the 'distance' from center
   - Extracting years from date columns like 'Host Since' 
   - Final check and export dataset for next stage
-- 04_Airbnb_Berlin_Feature_Selection: 
+- **04_Airbnb_Berlin_Feature_Selection**
   - Multivariable Analysis using LASSO, Ridge, GradientBoosting and Random Forest
   - Summarization and Selection of Variables
   - Final check and export dataset for next stage
-- 05_Airbnb_Berlin_Model_selection_Finetuning: Training different models, tuning hyper-parameters and studying Model performance 
+- **05_Airbnb_Berlin_Model_selection_Finetuning**: Training different models, tuning hyper-parameters and studying Model performance 
   - Apply regression models
     - Linear Regression
     - Decision Tree Regressor
