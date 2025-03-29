@@ -1,7 +1,16 @@
-# 🧠 Project Title
+# 🧠 Price Prediction of Berlin Airbnb accommodation
 
-Brief one-liner describing your project and its purpose.  
-*Example: Predicting Airbnb rental prices in Berlin using machine learning.*
+Airbnb is a global online marketplace that connects people looking for accommodations with hosts who have spaces to rent. It operates through both a website and a mobile application, making it easy for travelers to find short-term rentals, vacation homes, and even experiences offered by locals. 
+Airbnb enables people to rent out their properties, apartments, or even shared spaces to travelers looking for accommodation. It operates through a website (www.airbnb.com) and a mobile app
+
+## Key Features of Airbnb
+- Search and Booking – Users can search for accommodations based on location, price, type, and amenities.
+- Filters and Categories – Listings are categorized by type (e.g., entire home, private room, shared room).
+- Reviews and Ratings – Travelers can check ratings and reviews from previous guests.
+- Secure Payments – Airbnb provides a secure payment system to protect both guests and hosts.
+
+## Project Goal
+The objective of this project is to predict the price of accommodations based on a summary of available features.
 
 ---
 
@@ -19,11 +28,13 @@ Brief one-liner describing your project and its purpose.
 
 ## 📌 Overview
 
-This project aims to _(brief project goal)_.  
+This dataset provides detailed information on Airbnb listings in Berlin, including reviewer ratings and guest comments. It enables exploration of property characteristics, host profiles, and guest experiences in the German capital.
+
+This project aims to to predict the price of accommodations based on a summary of available features.  
 It uses Python and various machine learning libraries to _(summary of methodology or techniques used)_.
 
-**Problem Type:** Regression / Classification / Clustering  
-**Main Objective:** Predict _(target variable)_ based on _(key features)_.
+**Problem Type:** Regression 
+**Main Objective:** Predict Airbnb rental prices based on property Accomodates, location, Room Type and Property Type and more features.
 
 ---
 
@@ -41,7 +52,8 @@ project-name/
 │   └── evaluate.py
 ├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
-└── config.yaml         # (Optional) Configuration settings
+└── pyproject.toml      # Dependencies
+|__ poetry.lock         # 
 ```
 
 ---
