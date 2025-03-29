@@ -30,12 +30,50 @@ The objective of this project is to predict the price of accommodations based on
 
 This dataset provides detailed information on Airbnb listings in Berlin, including reviewer ratings and guest comments. It enables exploration of property characteristics, host profiles, and guest experiences in the German capital.
 
-This project aims to to predict the price of accommodations based on a summary of available features.  
+This project aims to predict the price of accommodations based on a summary of available features.  
 It uses Python and various machine learning libraries to _(summary of methodology or techniques used)_.
 
 **Problem Type:** Regression 
 
-**Main Objective:** Predict Airbnb rental prices based on property Accomodates, location, Room Type and Property Type and more features.
+**Main Objective:** Predict Airbnb rental prices based on property Accommodates, location, Room Type and Property Type and more features.
+
+The project is written in Python and contain the following notebooks and stages:
+- 01_Airbnb_Berlin_Data_Preparation
+  - Import dataset
+  - Aggregate dataset by Listing ID
+  - Inspection: descriptive, statistics info and missing values
+  - Identify data types - categories, numbers and objects
+  - Pre-cleaning - If a categorical column is not relevant to the analysis, we can remove it
+    - Reduce Large Categories
+    - Transform/Manipulate data ('instant_bookable' data into bool)
+  - Export dataset for next stage
+- 02_Airbnb_Berlin_EDA1,2 (Explanatory Data Analysis)
+  - Location vs Price
+  - room and property type vs Price
+  - Price Differences on a minimum_nights, number_of_reviews, reviews_per_month, and availability_365
+  - Correlations between reviews
+  - Detect and handle outliers using inter-quartile range (IQR)
+  - Detect and handle missing values using KNN model
+- 03_Airbnb_Berlin_Feature_Engineering
+  - Transfer 'latitude' and 'longitude' to the 'distance' from center
+  - Extracting years from date columns like 'Host Since' 
+  - Final check and export dataset for next stage
+- 04_Airbnb_Berlin_Feature_Selection: 
+  - Multivariable Analysis using LASSO, Ridge, GradientBoosting and Random Forest
+  - Summarization and Selection of Variables
+  - Final check and export dataset for next stage
+- 05_Airbnb_Berlin_Model_selection_Finetuning: Training different models, tuning hyper-parameters and studying Model performance 
+  - Apply regression models
+    - Linear Regression
+    - Decision Tree Regressor
+    - Random Forest Regressor
+    - Adaptive Boosting (ADABoost)
+    - Gradient Boosting Machine
+    - Support Vector Machines
+    - XGBoost
+  - Hyperparameters and Finetuning
+  - Model Evaluation
+  - Conclusions and best Model selected
 
 ---
 
@@ -65,7 +103,7 @@ Instructions to get a copy of the project running locally.
 ### Prerequisites
 
 - Download [Airbnb Berlin.csv](https://www.kaggle.com/datasets/thedevastator/berlin-airbnb-ratings-how-hosts-measure-up/data)
-- Intsall python
+- Install python
   
 ## ⚙️ Installation
 
@@ -127,7 +165,7 @@ The best Model we got before any tuning was XGBoost with MAE=18.94 and R²=0.52
 ---
 ### 🛠️ Hyperparameters and Fine-tuning
 
-The best Model we got with improvment of 5.52%, after tuning using **RandomizedSearchCV(estimator=model_RFR, param_distributions=lighter_grid, n_iter=25, cv=3,
+The best Model we got with improvement of 5.52%, after tuning using **RandomizedSearchCV(estimator=model_RFR, param_distributions=lighter_grid, n_iter=25, cv=3,
                                verbose=2, random_state=42, n_jobs=-1)** was **RandomForestRegressor(bootstrap=False, max_depth=30, max_features='sqrt',
                       min_samples_split=5, n_estimators=300, random_state=42)** 
 
@@ -142,6 +180,11 @@ Summary of model performance:
 
 Optional: Add graphs, confusion matrix, or screenshots here.
 
+---
+
+## Websites
+- https://www.kaggle.com/
+- https://www.airbnb.com/
 ---
 
 ## 🤝 Contributing
