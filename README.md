@@ -125,8 +125,8 @@ The best Model we got before any tuning was XGBoost with MAE=18.94 and R²=0.52
 | SVR              | 27.265245 | 2263.359686  | 47.574780 | 0.554178  | -0.004677 |
 | ADABoost         | 28.698045 | 1793.594578  | 42.350851 | 0.552306  | 0.203846  |
 
-### ![image](https://github.com/user-attachments/assets/6fa120c2-226b-43a5-addf-66c33b0d4858)
-Hyperparameters and Finetuning
+### ![Hyperparameters and Finetuning](https://github.com/user-attachments/assets/6fa120c2-226b-43a5-addf-66c33b0d4858)
+
 The best Model we got with improvment of 5.52%, after tuning using **RandomizedSearchCV(estimator=model_RFR, param_distributions=lighter_grid, n_iter=25, cv=3,
                                verbose=2, random_state=42, n_jobs=-1)** was **RandomForestRegressor(bootstrap=False, max_depth=30, max_features='sqrt',
                       min_samples_split=5, n_estimators=300, random_state=42)** 
