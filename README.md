@@ -1,4 +1,4 @@
-# 📘 Project Title
+# 📘 Price Prediction of Berlin Airbnb accommodation
 
 A brief description of what this project does and who it's for.
 
@@ -6,6 +6,7 @@ A brief description of what this project does and who it's for.
 
 ## 📂 Table of Contents
 
+- [Overview](#overview) 
 - [About](#about)
 - [Features](#features)
 - [Getting Started](#getting-started)
@@ -17,11 +18,24 @@ A brief description of what this project does and who it's for.
 - [License](#license)
 - [Contact](#contact)
 
----
+## Overview of Airbnb Application & Website
 
+Airbnb is a global online marketplace that connects people looking for accommodations with hosts who have spaces to rent. It operates through both a website and a mobile application, making it easy for travelers to find short-term rentals, vacation homes, and even experiences offered by locals. 
+Airbnb enables people to rent out their properties, apartments, or even shared spaces to travelers looking for accommodation. It operates through a website (www.airbnb.com) and a mobile app
+
+### Key Features of Airbnb
+- Search and Booking – Users can search for accommodations based on location, price, type, and amenities.
+- Filters and Categories – Listings are categorized by type (e.g., entire home, private room, shared room).
+- Reviews and Ratings – Travelers can check ratings and reviews from previous guests.
+- Secure Payments – Airbnb provides a secure payment system to protect both guests and hosts.
+  
 ## 🧾 About
 
-Describe the project in more detail. What problem does it solve? Who is it for?
+### Project Overview
+This dataset provides detailed information on Airbnb listings in Berlin, including reviewer ratings and guest comments. It enables exploration of property characteristics, host profiles, and guest experiences in the German capital.
+
+### Project Goal
+The objective of this project is to predict the price of accommodations based on a summary of available features. This task will be approached as a regression problem.
 
 ---
 
