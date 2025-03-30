@@ -69,8 +69,8 @@ The project is written in Python and contain the following notebooks and stages:
 
 ### Explanatory Data Analysis
 
-The next step in the analysis is visualizing the data. This was interesting because I wanted to see the patterns and trends of the relationship between different independent variables and between dependent and independent variables.
-First I started with the target value distribution and statistics to identify extreme outliers 
+The next step in the analysis involved visualizing the data, which was particularly insightful for identifying patterns and trends—both among independent variables and in relation to the target variable. I began by examining the distribution and summary statistics of the target variable to detect any extreme outliers.
+
 ![Screenshot](images/price_distribution.png)
 
 The description of price shows that 75% of the room only charged within 70€. But we can find the maximized price is extremely large - up to 9000€.
@@ -89,7 +89,7 @@ I also wanted to check how the average price remains when the number of accommod
 
 ![Screenshot](images/price_distribution_by_accomodates.png)
 
-"It appears so. Additionally, I explored whether being a superhost has any influence on the listing price. Figure 6 shows the count of hosts categorized by superhost status, where ‘0’ represents hosts without the superhost title, and ‘1’ indicates those who are superhosts.
+It appears so. Additionally, I explored whether being a superhost has any influence on the listing price. Figure 6 shows the count of hosts categorized by superhost status, where ‘0’ represents hosts without the superhost title, and ‘1’ indicates those who are superhosts.
 
 ![Screenshot](images/is_superthost.png)
 Figure 6: 'Is_Superhost' Count
