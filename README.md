@@ -89,30 +89,31 @@ I also wanted to check how the average price remains when the number of accommod
 
 ![Screenshot](images/price_distribution_by_accomodates.png)
 
-Looks like it is. Also, I can check whether a host is a super host or not, and if this contributes in a way on how the price might get affected or influenced. Fig 4 indicates the count whether a host was a superhost or not. ‘0’ indicates the absence of superhost title and ‘1’ indicates as true
+"It appears so. Additionally, I explored whether being a superhost has any influence on the listing price. Figure 6 shows the count of hosts categorized by superhost status, where ‘0’ represents hosts without the superhost title, and ‘1’ indicates those who are superhosts.
 
 ![Screenshot](images/is_superthost.png)
+Figure 6: 'Is_Superhost' Count
 
 Along with the Exploratory analysis, I have also dealt with some statistical inference questions on what features or variables have a good correlation with the target variable. For this, I have calculated the Spearman Correlation
 
 <img src="images/correlation_heatmap.png" alt="Screenshot" width="482" height="686"/>
 
-This is an interesting calculation at hand here, because the relationship between different variables can be calculated which proves an important factor in building our model later on.
+This is a particularly insightful calculation, as it reveals the relationships between different variables—an important factor that can significantly influence model development later on.
 
-Besides this, I also wanted to check how the mean price varies for different neighborhoods, and how many outliers are present, so that I get a clear picture how the data is. This is done by a box plot
+In addition, I wanted to examine how the mean price varies across different neighborhoods and identify any outliers to gain a clearer understanding of the data distribution. This analysis was conducted using a box plot.
 
 ![Screenshot](images/neighborhoods_box_plot.png)
+Fig 7: Varying Median price for the neighborhoods
 
 ---
 ### Model selection and Fine-tuning
-Now comes the part where the models will be trained, now that the data acquired is wrangled properly and brought to the same format. 
-Since, this is for predicting the price, which is a continuous variable, I have used Regression models for this project such as Random Forest Regressor, Adaptive Boosting (ADABoost) and XGBoost. 
+With the data now properly wrangled and standardized, the next step is to train the models. Since the goal is to predict price—a continuous variable—regression models have been employed for this task. Specifically, this project utilizes Random Forest Regressor, Adaptive Boosting (AdaBoost), and XGBoost. 
 
 The Training and Testing data have been split into 80% and 20%(a cross validation technique explained next) respectively using Machine Learning ‘sci-kit’ library.
 
-*italic Just a note here that I have also used a technique of ‘Label Encoding’ where I have changed the categorical columns to numeric columns, since Machine Learning algorithms can only predict on numeric data.*
+*italic I have also used a technique of ‘Label Encoding’ where I have changed the categorical columns to numeric columns, since Machine Learning algorithms can only predict on numeric data.*
 
-Mainly, I have used almost all the features from the sub DataFrame(just to remind, a set of features have been extracted into a separate one for analysis) to predict our dependent variable, price. This is a supervised learning technique since our target variable has been labelled and could used for mapping input-output pairs.
+For the prediction of the target variable, price, I primarily utilized nearly all the features from the sub-DataFrame (which, as a reminder, was created by extracting a specific set of features for analysis). This approach falls under supervised learning, as the target variable is labeled and can be used to map input-output relationships.
 
 ---
 #### 🧪 Model Details
