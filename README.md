@@ -85,9 +85,9 @@ project-name/
 ├── notebooks/          # Jupyter notebooks for EDA and model development
 ├── models/             # Trained models and serialized files
 ├── src/                # Core scripts: preprocessing, training, evaluation
-│   ├── preprocess.py
-│   ├── train.py
-│   └── evaluate.py
+│   ├── preprocess.py   # missing
+│   ├── train.py        # missing
+│   └── evaluate.py     # missing
 ├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
 └── pyproject.toml      # Project dependencies and settings
