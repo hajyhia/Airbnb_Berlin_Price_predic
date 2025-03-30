@@ -79,30 +79,37 @@ The project is written in Python and contain the following notebooks and stages:
 ### Explanatory Data Analysis
 
 The next step in the analysis is visualizing the data. This was interesting because I wanted to see the patterns and trends of the relationship between different independent variables and between dependent and independent variables.
-
 First I started with the target value distribution and statistics to identify extreme outliers 
 ![Screenshot](images/price_distribution.png)
 
 The description of price shows that 75% of the room only charged within 70€. But we can find the maximized price is extremely large - up to 9000€.
 
 We can also have scatter plot to show how price distributed by geolocation (Latitude and Longitude)
+
 ![Screenshot](images/price_distribution_by_geolocation.png)
 
 In addition, we can explore the average price offered with different neighborhoods or by Room Type.
+
 ![Screenshot](images/price_distribution_by_neighborhoods.png)
+
 ![Screenshot](images/price_distribution_by_room_type.png)
 
 I also wanted to check how the average price remains when the number of accommodates comes into picture. By intuition, we know that as we increase the number of accommodates while renting out a house, the price automatically increases. Let’s see if this is true in this case too.
+
 ![Screenshot](images/price_distribution_by_accomodates.png)
 
 Looks like it is. Also, I can check whether a host is a super host or not, and if this contributes in a way on how the price might get affected or influenced. Fig 4 indicates the count whether a host was a superhost or not. ‘0’ indicates the absence of superhost title and ‘1’ indicates as true
+
 ![Screenshot](images/is_superthost.png)
 
 Along with the Exploratory analysis, I have also dealt with some statistical inference questions on what features or variables have a good correlation with the target variable. For this, I have calculated the Spearman Correlation
-![Screenshot](images/correlation_heatmap.png)
+
+<img src="images/correlation_heatmap.png" alt="Screenshot" width="482" height="686"/>
+
 This is an interesting calculation at hand here, because the relationship between different variables can be calculated which proves an important factor in building our model later on.
 
 Besides this, I also wanted to check how the mean price varies for different neighborhoods, and how many outliers are present, so that I get a clear picture how the data is. This is done by a box plot
+
 ![Screenshot](images/neighborhoods_box_plot.png)
 ---
 
