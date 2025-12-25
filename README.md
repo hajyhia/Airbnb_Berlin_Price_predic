@@ -1,6 +1,6 @@
 # 🧠 Price Prediction of Berlin Airbnb accommodation
 
-Airbnb is a global online marketplace that connects people looking for accommodations with hosts who have spaces to rent. It operates through both a website and a mobile application, making it easy for travelers to find short-term rentals, vacation homes, and even experiences offered by locals. 
+Airbnb is a global online marketplace that connects people looking for accommodations with hosts who have spaces to rent. It operates through both a website and a mobile application, making it easy for travelers to find short-term rentals, vacation homes, and un even experiences offered by locals. 
 Airbnb enables people to rent out their properties, apartments, or even shared spaces to travelers looking for accommodation. It operates through a website (www.airbnb.com) and a mobile app
 
 ## Key Features of Airbnb
@@ -36,34 +36,34 @@ It uses Python and various machine learning libraries to _(summary of methodolog
 
 **Main Objective:** Predict Airbnb rental prices based on property Accommodates, location, Room Type and Property Type and more features.
 
-The project is written in Python and contain the following notebooks and stages:
+The project is written in Python and contains the following notebooks and stages:
 - **01_Airbnb_Berlin_Data_Preparation**
   - Import dataset and aggregate dataset by Listing ID
-  - Inspection: descriptive, statistics info and missing values
-  - Identify data types - categories, numbers and objects
+  - Inspection: descriptive, statistics info, and missing values
+  - Identify data types - categories, numbers,and objects
   - Pre-cleaning - If a categorical column is not relevant to the analysis, we can remove it
     - Reduce Large Categories
-    - Transform/Manipulate data ('instant_bookable' data into bool)
+    - Transform/Manipulate data ('instant_bookable' data into a bool)
   - Export dataset for next stage
 - **02_Airbnb_Berlin_EDA (Explanatory Data Analysis)**
-  - Location vs Price and Room Type and Property type vs Price
+  - Location vs Price and Room Type and Property Type vs Price
   - Price Differences on a minimum_nights, number_of_reviews, reviews_per_month, and availability_365
   - Correlations between reviews
   - Detect and handle outliers using inter-quartile range (IQR)
-  - Detect and handle missing values using KNN model
+  - Detect and handle missing values using the KNN model
 - **03_Airbnb_Berlin_Feature_Engineering**
-  - Transfer 'latitude' and 'longitude' to the 'distance' from center
-  - Extracting years from date columns like 'Host Since' 
+  - Transfer 'latitude' and 'longitude' to the 'distance' from the center
+  - Extracting years from date columns like 'Host Since.' 
   - Final check and export dataset for next stage
 - **04_Airbnb_Berlin_Feature_Selection**
-  - Multivariable Analysis using LASSO, Ridge, GradientBoosting and Random Forest
+  - Multivariable Analysis using LASSO, Ridge, GradientBoosting, and Random Forest
   - Summarization and Selection of Variables
   - Final check and export dataset for next stage
-- **05_Airbnb_Berlin_Model_selection_Finetuning**: Training different models, tuning hyper-parameters and studying Model performance 
+- **05_Airbnb_Berlin_Model_selection_Finetuning**: Training different models, tuning hyper-parameters, and studying Model performance 
   - Apply regression models
   - Hyperparameters and Finetuning
   - Model Evaluation
-  - Conclusions and best Model selected
+  - Conclusions and the best Model selected
 
 ---
 
@@ -73,9 +73,9 @@ The next step in the analysis involved visualizing the data, which was particula
 
 ![Screenshot](images/price_distribution.png)
 
-The description of price shows that 75% of the room only charged within 70€. But we can find the maximized price is extremely large - up to 9000€.
+The description of the price shows that 75% of the room costs only 70€. But we can find the maximized price is extremely large - up to 9000€.
 
-We can also have scatter plot to show how price distributed by geolocation (Latitude and Longitude)
+We can also have a scatter plot to show how the price is distributed by geolocation (Latitude and Longitude)
 
 ![Screenshot](images/price_distribution_by_geolocation.png)
 
@@ -85,7 +85,7 @@ In addition, we can explore the average price offered with different neighborhoo
 
 ![Screenshot](images/price_distribution_by_room_type.png)
 
-I also wanted to check how the average price remains when the number of accommodates comes into picture. By intuition, we know that as we increase the number of accommodates while renting out a house, the price automatically increases. Let’s see if this is true in this case too.
+I also wanted to check how the average price remains when the number of accommodations comes into the picture. By intuition, we know that as we increase the number of accommodations while renting out a house, the price automatically increases. Let’s see if this is true in this case, too.
 
 ![Screenshot](images/price_distribution_by_accomodates.png)
 
@@ -109,7 +109,7 @@ Fig 7: Varying Median price for the neighborhoods
 ### Model selection and Fine-tuning
 With the data now properly wrangled and standardized, the next step is to train the models. Since the goal is to predict price—a continuous variable—regression models have been employed for this task. Specifically, this project utilizes Random Forest Regressor, Adaptive Boosting (AdaBoost), and XGBoost. 
 
-The Training and Testing data have been split into 80% and 20%(a cross validation technique explained next) respectively using Machine Learning ‘sci-kit’ library.
+The Training and Testing data have been split into 80% and 20%(a cross-validation technique explained next), respectively, using the  Machine Learning ‘sci-kit’ library.
 
 *italic I have also used a technique of ‘Label Encoding’ where I have changed the categorical columns to numeric columns, since Machine Learning algorithms can only predict on numeric data.*
 
@@ -118,9 +118,9 @@ For the prediction of the target variable, price, I primarily utilized nearly al
 ---
 #### 🧪 Model Details
 
-- **Algorithm(s):** Linear Regression, Decision Tree Regressor, Random Forest, Gradient Boosting Machine (GBM),Adaptive Boosting (ADABoost), and XGBoost.
+- **Algorithm(s):** Linear Regression, Decision Tree Regressor, Random Forest, Gradient Boosting Machine (GBM), Adaptive Boosting (ADABoost), and XGBoost.
 - **Evaluation Metrics:** RMSE, MAE, R² Score
-- **Features Used:** "Guests Included","Room Type","Bedrooms","Accomodates","Cleanliness Rating","Location Rating","Value Rating","Property Type Reduced","Distance From Center","Reviews","Beds","Host Since From Now"
+- **Features Used:** "Guests Included", "Room Type", "Bedrooms", "Accommodates", "Cleanliness Rating", "Location Rating", "Value Rating", "Property Type Reduced", "Distance From Center", "Reviews", "Beds", "Host Since From Now"
 
 ---
 #### 📊 Results
@@ -185,7 +185,7 @@ Instructions to get a copy of the project running locally.
 ### Prerequisites
 
 - Download [Airbnb Berlin.csv](https://www.kaggle.com/datasets/thedevastator/berlin-airbnb-ratings-how-hosts-measure-up/data)
-- Install python
+- Install Python
   
 ## ⚙️ Installation
 
